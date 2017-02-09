@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+
+#define MediaFileName @"MixVideo.mov"
+
 /**
  添加音乐完成回调的block
  */

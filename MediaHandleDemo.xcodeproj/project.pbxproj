@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F73985811E4C547A00088918 /* MixVideo.mov in Resources */ = {isa = PBXBuildFile; fileRef = F73985801E4C547A00088918 /* MixVideo.mov */; };
+		F73985851E4C55DE00088918 /* m1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F73985821E4C55DE00088918 /* m1.mp3 */; };
+		F73985861E4C55DE00088918 /* m2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F73985831E4C55DE00088918 /* m2.mp3 */; };
+		F73985871E4C55DE00088918 /* m3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F73985841E4C55DE00088918 /* m3.mp3 */; };
 		FD5A96701C05A78A008386F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5A966F1C05A78A008386F4 /* main.m */; };
 		FD5A96731C05A78A008386F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5A96721C05A78A008386F4 /* AppDelegate.m */; };
 		FD5A96761C05A78A008386F4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5A96751C05A78A008386F4 /* ViewController.m */; };
@@ -38,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F73985801E4C547A00088918 /* MixVideo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = MixVideo.mov; sourceTree = "<group>"; };
+		F73985821E4C55DE00088918 /* m1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = m1.mp3; sourceTree = "<group>"; };
+		F73985831E4C55DE00088918 /* m2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = m2.mp3; sourceTree = "<group>"; };
+		F73985841E4C55DE00088918 /* m3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = m3.mp3; sourceTree = "<group>"; };
 		FD5A966B1C05A789008386F4 /* MediaHandleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MediaHandleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD5A966F1C05A78A008386F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FD5A96711C05A78A008386F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -110,6 +118,10 @@
 			isa = PBXGroup;
 			children = (
 				FD5A96A51C05A7AF008386F4 /* 月半弯.mp3 */,
+				F73985801E4C547A00088918 /* MixVideo.mov */,
+				F73985821E4C55DE00088918 /* m1.mp3 */,
+				F73985831E4C55DE00088918 /* m2.mp3 */,
+				F73985841E4C55DE00088918 /* m3.mp3 */,
 				FD5A96A11C05A7A2008386F4 /* MediaManager.h */,
 				FD5A96A21C05A7A2008386F4 /* MediaManager.m */,
 				FD5A96711C05A78A008386F4 /* AppDelegate.h */,
@@ -220,7 +232,8 @@
 				TargetAttributes = {
 					FD5A966A1C05A789008386F4 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = 6J2XGE456D;
+						DevelopmentTeam = 9K9256C42S;
+						ProvisioningStyle = Manual;
 					};
 					FD5A96831C05A78A008386F4 = {
 						CreatedOnToolsVersion = 7.1;
@@ -259,10 +272,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F73985871E4C55DE00088918 /* m3.mp3 in Resources */,
+				F73985861E4C55DE00088918 /* m2.mp3 in Resources */,
+				F73985851E4C55DE00088918 /* m1.mp3 in Resources */,
 				FD5A967E1C05A78A008386F4 /* LaunchScreen.storyboard in Resources */,
 				FD5A967B1C05A78A008386F4 /* Assets.xcassets in Resources */,
 				FD5A96A71C05A7AF008386F4 /* 月半弯.mp3 in Resources */,
 				FD5A96791C05A78A008386F4 /* Main.storyboard in Resources */,
+				F73985811E4C547A00088918 /* MixVideo.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,11 +447,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9K9256C42S;
 				INFOPLIST_FILE = MediaHandleDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.happypool.Push;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "ab8782ba-3f4b-4a5a-bcb4-ec23bd5b2eaf";
+				PROVISIONING_PROFILE_SPECIFIER = DEBUG_Roidmi_All;
 			};
 			name = Debug;
 		};
@@ -442,6 +462,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MediaHandleDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -517,6 +538,7 @@
 				FD5A969A1C05A78A008386F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD5A969B1C05A78A008386F4 /* Build configuration list for PBXNativeTarget "MediaHandleDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +547,7 @@
 				FD5A969D1C05A78A008386F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD5A969E1C05A78A008386F4 /* Build configuration list for PBXNativeTarget "MediaHandleDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +556,7 @@
 				FD5A96A01C05A78A008386F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

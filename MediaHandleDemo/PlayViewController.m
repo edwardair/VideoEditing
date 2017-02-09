@@ -9,6 +9,7 @@
 #import "PlayViewController.h"
 #import <MediaPlayer/MediaPlayer.h>
 #import <MobileCoreServices/MobileCoreServices.h>
+#import "MediaManager.h"
 @interface PlayViewController ()
 {
     MPMoviePlayerController *_moviePlayer;
@@ -22,10 +23,10 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     
-    NSString* videoName = @"export.mov";
+    NSString* videoName = MediaFileName;
     
     NSString *exportPath = [NSTemporaryDirectory() stringByAppendingPathComponent:videoName];
-//    NSLog(@"-------%@",exportPath);
+    NSLog(@"-------%@",exportPath);
     
     _moviePlayer = [[MPMoviePlayerController alloc] init];
     

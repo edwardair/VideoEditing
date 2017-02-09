@@ -11,7 +11,7 @@
 #import "PlayViewController.h"
 #import <MediaPlayer/MediaPlayer.h>
 #import <MobileCoreServices/MobileCoreServices.h>
-#define AUDIO_URL [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"月半弯" ofType:@"mp3"]]
+#define AUDIO_URL [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"m1" ofType:@"mp3"]]
 
 @interface ViewController ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 {
@@ -56,6 +56,17 @@
     }
 }
 
+- (void)addSy{
+    UILabel *label = [[UILabel alloc]init];
+    label.textColor = [UIColor redColor];
+    label.text = @"哈哈😄😆";
+    [label sizeToFit];
+    CALayer *exportWatermarkLayer = label.layer;
+    CALayer *parentLayer = [CALayer layer];
+    CALayer *videoLayer = [CALayer layer];
+//    parentLayer.frame = CGRectMake(0, 0, <#CGFloat width#>, <#CGFloat height#>)
+}
+
 - (IBAction)videoPlay:(id)sender {
     
     PlayViewController *pvc = [[PlayViewController alloc] init];
@@ -80,6 +91,9 @@
     [alertVc addAction:photoAction];
     [alertVc addAction:cancelAction];
     [self presentViewController:alertVc animated:YES completion:nil];
+}
+- (IBAction)useLocalVideo:(id)sender {
+    _videoUrl = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"MixVideo.mov" ofType:nil]];
 }
 
 #pragma mark 从摄像头获取图片或视频
